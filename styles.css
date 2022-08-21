@@ -3,11 +3,20 @@ body {
     font-family: "Montserrat";
     font-weight: 500;
     color: cyan;
+    margin: 0;
 }
 
 html {
     scroll-behavior: smooth;
 }
+
+
+/* #grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(50px, auto);
+} */
+
 
 
 .nav-bar {
@@ -44,7 +53,7 @@ header {
     display: flex;
     justify-content: flex-start;
     animation: slideInLeft 3s;
-    margin: 5% 0 17% 0;
+    margin: 5% 0 15% 0;
 }
 
 @keyframes slideInLeft {
@@ -60,7 +69,7 @@ header {
 
 #overlay-left {
     opacity: 1;
-    margin: 6.5% 0 0 -1%;
+    margin: 6.5% 0 0 0;
     height: 236px;
     width: 38%;
     background: linear-gradient(to right, rgba(23, 32, 36, 0.7), rgba(0, 255, 255, 0.55)), url("./assets/even-smaller-square-louvre-pyramid-bottom.jpg") no-repeat;
@@ -152,10 +161,6 @@ p::after {
     justify-content: center;
     font-size: x-large;
     margin: 1% 4% 0 0;
-}
-
-#scroll-to-projects {
-    /* margin-bottom: 19%; */
 }
 
 
@@ -358,4 +363,156 @@ form button {
     font-size: medium;
     background-color: rgba(5, 239, 239, 0.9);
     margin-top: .5%;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 912px){
+
+    header {
+        margin: 2% auto 42% auto;
+    }
+
+    #overlay-left, #overlay-right {
+        width: 15%;
+    }
+ 
+    .header-info {
+        width: 50%;
+        font-size: medium;
+    }
+
+    #name {
+        padding-top: 22px;
+    }
+
+    .icons {
+        font-size: 38px;
+    }
+    .tech-icons-group {
+        margin: 8% 1% 3% 3%;
+    }
+    .nav-bar {
+        margin-top: -4%;
+        flex-direction: column;
+    }
+
+    .project-and-descrip {
+        margin-bottom: 1%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #projects-nav, #about-nav, #contact-nav {
+        margin-bottom: -7%;
+    }
+
+    .contact-li-git-icons-nav{
+        flex-direction: column;
+        margin-left: 0%;
+    }
+
+    .li-git-icons {
+        margin-left: 0%;
+    }
+
+    p::after {
+        margin-top: 21px;
+    }
+
+    .overlay-2 {
+        transform: translateY(58%);
+        width: 66vw;
+    }
+    .project-and-descrip {
+        flex-direction: column;
+        margin: 1% auto 1% auto;
+    }
+
+    #stem-project-descrip{
+        transform: translateX(7%);
+    }
+
+    #rtv-project-descrip {
+        margin-left: 5%;
+    }
+
+    #rtv-project-descrip, #stem-project-descrip {
+        width: 65%;
+        height: 70vh;
+        padding: 5px 10px 10px 20px;
+    }
+    
+    #stem-edu-screenshot-overlay, #rtv-screenshot-overlay {
+        position: relative;
+        background-size: contain;
+        height: 15vh;
+        width: 60vw;
+        border-radius: 0;
+        z-index: 3;
+    }
+
+  
+    #stem-edu-screenshot-overlay {
+        margin: -42% 5%;
+        transform: translateX(8.5%);
+    }
+
+    #rtv-project-descrip {
+        transform: translateY(-55%);
+        padding-bottom: 5px;
+    }
+
+    #rtv-screenshot-overlay {
+        transform: translateY(225%);
+        margin: 45% 0 2% 12.5%;
+    }
+
+   
+    #builder {
+        font-size: large;
+    }
+    #me-detail {
+        font-size: small;
+    }
+    #pic {
+        margin: 12% 0 0 3%;
+    }
+    #about-me {
+        margin-left: 2%;
+        width: 38%;
+    }
+    #projects {
+        margin: 1.5% 4% 0 0;
+    }
+    #overlay-3 {
+        margin-top: -10%;
+        width:58vw;
+    }
+    #about {
+        margin: -6% 4% 0 3%;
+    }
+
+    #pic {
+        margin-top: 6%;
+        width: 95px;
+    }
+
+    #contact {
+        margin-top: 1.55%;
+    }
+
+    #get-in-touch {
+        margin-right: 25%;
+    }
+
+    form {
+        transform: translateX(34%)
+    }
+    form input {
+        width: 47%;
+    } 
+
+    form textarea {
+        width: 47%;
+    }
+
 }

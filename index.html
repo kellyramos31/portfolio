@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/866fd0d220.js" crossorigin="anonymous"></script>
@@ -16,10 +16,10 @@
 
     <nav class="nav-bar">
         <!-- <a href=index.html>home</a> -->
-        <a href="#projects">projects</a>
-        <a href="#about">about</a>
+        <a id="projects-nav" href="#projects">projects</a>
+        <a id="about-nav" href="#about">about</a>
         <div class="contact-li-git-icons-nav">
-            <a href="#contactme">contact</a>
+            <a id="contact-nav" href="#contactme">contact</a>
             <span class="li-git-icons">
                 <a href="https://www.linkedin.com/in/kelly-a-ramos/"><i class="fa-brands fa-linkedin"
                         style="font-size: 28px; margin-top: -7%"></i></a>
@@ -31,6 +31,7 @@
         </div>
     </nav>
 
+<!-- <div id="grid-container"> -->
     <header>
         <div id="overlay-left"></div>
         <div class="header-info">
@@ -97,7 +98,7 @@
                 </div>
             </div>
             <!-- put in href heroku app link here -->
-            <a href="https://stem-edu.herokuapp.com/">
+            <a class="screenshot-plus-link" href="https://stem-edu.herokuapp.com/">
                 <div id="stem-edu-screenshot-overlay"></div>
             </a>
             <!-- <img id="stem-edu-screenshot" src="./assets/stem-edu-screenshot.png" alt="stem-edu-project"> -->
@@ -106,9 +107,8 @@
 
         <div class="project-and-descrip">
             <!-- put in href for heroku app link here -->
-            <a href="https://rock-vote.herokuapp.com/">
-                <div id="rtv-screenshot-overlay"></div>
-              
+            <a class="screenshot-plus-link" href="https://rock-vote.herokuapp.com/">
+                <div id="rtv-screenshot-overlay"></div> 
             </a>
 
             <div id="rtv-project-descrip">
@@ -166,10 +166,10 @@
 
 
         <div id="send-msg">
-        <div id="get-in-touch">let's connect.</div>
-
+        
         <!-- ****figure out how to use Netlify form for this*** -->
         <div id="send-email-form">
+        <div id="get-in-touch">let's connect.</div>
            <form name="contact" action="POST" data-netlify="true">
                 <div class="field">
                     <input 
@@ -198,6 +198,7 @@
         </div>
         </div>
     </div>
+    <!-- </div> -->
 
 </body>
 
