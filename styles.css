@@ -718,7 +718,7 @@ form button {
     margin-top: .5%;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 912px) {
+@media only screen and (min-width: 360px) and (max-width: 376px) {
 
     header {
         margin: 2% auto 42% auto;
@@ -726,7 +726,7 @@ form button {
 
     #overlay-left,
     #overlay-right {
-        width: 15%;
+        width: 15.75%;
     }
 
     .header-info {
@@ -787,11 +787,11 @@ form button {
     }
 
     #stem-project-descrip {
-        transform: translateX(7%);
+        transform: translateX(8%);
     }
 
     #rtv-project-descrip {
-        margin-left: 5%;
+        margin-left: 6%;
     }
 
     #rtv-project-descrip,
