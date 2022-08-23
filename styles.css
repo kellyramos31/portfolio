@@ -718,10 +718,10 @@ form button {
     margin-top: .5%;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 376px) {
+@media only screen and (min-width: 360px) and (max-width: 415px) {
 
     header {
-        margin: 2% auto 42% auto;
+        margin: 2% auto 45% auto;
     }
 
     #overlay-left,
@@ -778,7 +778,7 @@ form button {
 
     .overlay-2 {
         transform: translateY(58%);
-        width: 66vw;
+        width: 68vw;
     }
 
     .project-and-descrip {
@@ -851,7 +851,7 @@ form button {
 
     #overlay-3 {
         margin-top: -10%;
-        width: 58vw;
+        width: 59vw;
     }
 
     #about {
@@ -879,5 +879,54 @@ form button {
     form textarea {
         width: 47%;
     }
+
+
+   @media only screen and (min-width: 389px) and (max-width: 415px) {
+
+        header {
+            margin-top: 25%; 
+            margin-bottom: 70%;
+        }
+
+        #name {
+            padding-top:  30px;
+        }
+
+        p::after {     
+            margin-top: 28.5px;
+        }
+
+        #rtv-project-descrip,
+        #stem-project-descrip{
+            height: 56vh;
+            width: 66vw;
+        }
+
+        #rtv-screenshot-overlay {
+            transform: translateY(195%);
+            margin-left: 10%;
+        }
+
+        #projects-text, #contact-text {
+            margin-top: 2.75%;
+        }
+
+        #about-text {
+            margin-top: -5.25%;
+        }
+
+        form {
+            margin-left: -3%;
+        }
+
+        form input {
+            width: 49%;
+        }
+        
+        form textarea {
+            width: 49%;
+     }
+     
+   }
 
 }
