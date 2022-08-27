@@ -154,8 +154,6 @@ p::after {
 }
 
 
-
-
 .project-name-bold {
     font-weight: bold;
     color: rgb(227, 250, 250);
@@ -166,7 +164,7 @@ p::after {
     /* transform: translateY(95%);
     margin: 0 0 0 -1%; */
     height: 3vh;
-    width: 44.25vw;
+    width: 45vw;
     background: linear-gradient(to right, rgba(0, 255, 255, 0.55), rgba(23, 32, 36, 0.7)), url("./assets/louvre-pyramid-bottom.jpg") no-repeat;
 }
 
@@ -247,7 +245,7 @@ p::after {
     /* display: flex;
     justify-content: flex-start; */
     font-size: x-large;
-    margin: -6.5% 4% 0 3%;
+    margin: 1% 4% 0 3%;
 }
 
 #builder {
@@ -304,6 +302,7 @@ p::after {
 #send-msg {
     display: flex;
     flex-direction: column;
+    margin-left: .75%;
 }
 
 #get-in-touch {
@@ -314,7 +313,6 @@ p::after {
 }
 
 form {
-   transform: translateX(55.2%);
    font-size: medium;
    margin-bottom: 10%;
 }
@@ -721,7 +719,7 @@ form button {
 @media only screen and (min-width: 360px) and (max-width: 415px) {
 
     header {
-        margin: 2% auto 45% auto;
+        margin: 5% auto 58% auto;
     }
 
     #overlay-left,
@@ -840,6 +838,10 @@ form button {
         margin: 12% 0 0 3%;
     }
 
+    #about-text {
+        margin-top: -6.5%;
+    }
+
     #about-me {
         margin-left: 2%;
         width: 38%;
@@ -912,7 +914,7 @@ form button {
         }
 
         #about-text {
-            margin-top: -5.25%;
+            margin-top: -5%;
         }
 
         form {
