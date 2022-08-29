@@ -8,73 +8,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/866fd0d220.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css"> 
+    <!-- <link rel="stylesheet" href="styles.css">  -->
+    <link rel="stylesheet" href="styles-2.css">
 </head>
 
 
 <body>
-    <nav class="nav-bar">
-        <!-- <a href=index.html>home</a> -->
-        <a id="projects-nav" href="#projects">projects</a>
-        <a id="about-nav" href="#about">about</a>
-        <div class="contact-li-git-icons-nav">
-            <a id="contact-nav" href="#contactme">contact</a>
-            <span class="li-git-icons">
-                <a href="https://www.linkedin.com/in/kelly-a-ramos/"><i class="fa-brands fa-linkedin"
-                        style="font-size: 28px; margin-top: -7%"></i></a>
-                <a href="https://github.com/kellyramos31"><i class="fa-brands fa-github"
-                        style="font-size: 28px; margin-left: 25%; margin-top: -7%"></i></a>
-            </span>
-        </div>
 
-        </div>
-    </nav>
-
-    <header>
-        <div id="overlay-left"></div>
-        <div class="header-info">
-            <div id="name">kelly ramos</div>
-            <div id="dev">full-stack web developer</div>
     
-            <div class="tech-icons-group">
-                <span class="about-icons">
-
-                    <div class="icons">
-                        <i class="fa-brands fa-react" style="align-self: center"></i>
-                        <div class="icons-text">react</div>
-                    </div>
-
-                    <div class="icons">
-                        <i class="fa-brands fa-js-square" style="align-self: center"></i>
-                        <div class="icons-text">javascript</div>
-                    </div>
-
-                    <div class="icons">
-                        <i class="fa-brands fa-html5" style="align-self: center" ></i>
-                        <div class="icons-text">html5</div>
-                    </div>
-
-                    <div class="icons">
-                        <i class="fa-brands fa-css3-alt"style="align-self: center" ></i>
-                        <div class="icons-text">css3</div>
-                    </div>
+        <nav class="nav-bar">
+            <!-- <a href=index.html>home</a> -->
+            <a id="projects-nav" href="#projects">projects</a>
+            <a id="about-nav" href="#about">about</a>
+            <div class="contact-li-git-icons-nav">
+                <a id="contact-nav" href="#contactme">contact</a>
+                <span class="li-git-icons">
+                    <a href="https://www.linkedin.com/in/kelly-a-ramos/"><i class="fa-brands fa-linkedin"
+                            style="font-size: 28px; margin-top: -7%"></i></a>
+                    <a href="https://github.com/kellyramos31"><i class="fa-brands fa-github"
+                            style="font-size: 28px; margin-left: 25%; margin-top: -7%"></i></a>
                 </span>
             </div>
+         
+        </nav>
 
-            <p id="stack">MERN stack</p>
-        </div>
-        <div id="overlay-right"></div>
-    </header>
+            <header>
+                <div id="overlay-left"></div>
+                <div class="header-info">
+                    <div id="name">kelly ramos</div>
+                    <div id="dev">full-stack web developer</div>
+            
+                    <div class="tech-icons-group">
+                        <span class="about-icons">
+
+                            <div class="icons">
+                                <i class="fa-brands fa-react" style="align-self: center"></i>
+                                <div class="icons-text">react</div>
+                            </div>
+
+                            <div class="icons">
+                                <i class="fa-brands fa-js-square" style="align-self: center"></i>
+                                <div class="icons-text">javascript</div>
+                            </div>
+
+                            <div class="icons">
+                                <i class="fa-brands fa-html5" style="align-self: center" ></i>
+                                <div class="icons-text">html5</div>
+                            </div>
+
+                            <div class="icons">
+                                <i class="fa-brands fa-css3-alt"style="align-self: center" ></i>
+                                <div class="icons-text">css3</div>
+                            </div>
+                        </span>
+                    </div>
+
+                    <p id="stack">MERN stack</p>
+                </div>
+                <div id="overlay-right"></div>
+            </header>
+ 
 
 
    <div id="projects"></div>
-    <div class="sub-title">
-        <div id="projects-text">projects</div>
-        <div class="overlay-2"></div>
+
+   <div id="project-title-container">
+        <div class="sub-title">
+            <div id="projects-text">projects</div>
+            <div class="overlay-2"></div>
+        </div>
     </div>
 
-        <div class="project-and-descrip">
+
+  <div id="projects-container">
+        <div id="stem-project-container">
             <div id="stem-project-descrip">
+                <div>
                 <p id="stem-text">
                     <span class="project-name-bold">WiSE (Women in STEM Education)</span>, a full-stack learn-play app,
                     combines a
@@ -92,44 +101,48 @@
                             class="fa-brands fa-github"></i></a>
                     <a href="https://stem-edu.herokuapp.com/"><i class="fa-solid fa-link" title="link"></i></a>
                 </div>
+                </div>
             </div>
-            <!-- put in href heroku app link here -->
+         
             <a class="screenshot-plus-link" href="https://stem-edu.herokuapp.com/">
-                <div id="stem-edu-screenshot-overlay"></div>
+                <img src="./assets/stem-edu-screenshot-exact.png" id="stem-edu-screenshot-overlay">
             </a>
-            <!-- <img id="stem-edu-screenshot" src="./assets/stem-edu-screenshot.png" alt="stem-edu-project"> -->
-
         </div>
 
-        <div class="project-and-descrip">
-            <!-- put in href for heroku app link here -->
-            <a class="screenshot-plus-link" href="https://rock-vote.herokuapp.com/">
-                <div id="rtv-screenshot-overlay"></div> 
-            </a>
 
+        <div id="rtv-project-container">
+          
+          
             <div id="rtv-project-descrip">
-
-                <!-- maybe add separate github & website buttons here too -->
-
+                               
                 <p id="rtv-text">
                     <span class="project-name-bold">Rock the Vote (RTV)</span> is a full-stack app that provides a political
                     issues forum where users can add/edit/delete their own
                     issues, comment on
-                    other users' issues, as well as upvote and downvote all posted issues.
+                    other users' issues, as well as upvote and downvote on all posted issues.
                 </p>
-
+            
                 <div class="tech-stack">react.js &nbsp&nbsp mongoDB &nbsp&nbsp mongoose &nbsp&nbsp express &nbsp&nbsp
                     node.js &nbsp&nbsp axios &nbsp&nbsp token-based authentication
                 </div>
-
+            
                 <div class="project-links">
-                    <a id="rock-vote-link" href="https://github.com/kellyramos31/rtv" title="github"><i class="fa-brands fa-github"></i></a>
+                    <a id="rock-vote-link" href="https://github.com/kellyramos31/rtv" title="github"><i
+                            class="fa-brands fa-github"></i></a>
                     <a href="https://rock-vote.herokuapp.com/"><i class="fa-solid fa-link" title="link"></i></a>
                 </div>
             </div>
-        </div>
+        <a class="screenshot-plus-link" href="https://rock-vote.herokuapp.com/">
+            <img src="./assets/rtv-screenshot.png" id="rtv-screenshot-overlay">
+        </a>
+      
+            
+         </div>
+
+</div>
 
 
+    </div>
         <div id="about"></div>
         <div class="sub-title-2">
             <div id="overlay-3"></div>
@@ -153,13 +166,13 @@
         </div>
 
 
-
-    <div id="contactme">
-        <div class="sub-title">
-            <div id="contact-text">contact</div>
-            <div class="overlay-2"></div>
+        <div class="project-contact-title-container">
+            <div id="contactme">
+                <div class="sub-title">
+                    <div id="contact-text">contact</div>
+                    <div id="overlay-4"></div>
+                </div>
         </div>
-
 
         <div id="send-msg">
         
@@ -186,7 +199,7 @@
                     <textarea name="message" placeholder="message" rows="7"></textarea>
                 </div>
                 <div class="field">
-                    <div data-netlify-recaptcha="true"></div>
+                    <div id="captcha" data-netlify-recaptcha="true"></div>
                 </div>
 
                 <button type="submit">submit message</button>
