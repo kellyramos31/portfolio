@@ -371,7 +371,7 @@ form button {
     #projects-nav,
     #about-nav,
     #contact-nav {
-       margin-bottom: -5%;
+       margin-bottom: -7.5%;
     }
 
     header {
@@ -382,6 +382,10 @@ form button {
      
     #name {
         padding-top: 15px;
+    }
+
+    p::after {
+        margin-top: 14px;
     }
 
     .icons {
@@ -428,7 +432,7 @@ form button {
     }
 
     #about-and-pic {
-        width: 120%;
+        width: 110%%;
         margin-bottom: 25%;
     }
 
@@ -445,11 +449,15 @@ form button {
    }
 
    #send-email-form {
-    margin-left: 28%;
+    margin-left: 29%;
    }
 
    form input, form textarea {
     width: 90%;
+   }
+
+   #captcha {
+    width: 20%;
    }
    
 }
