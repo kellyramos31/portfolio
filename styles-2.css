@@ -457,7 +457,7 @@ form button {
    }
 
    #captcha {
-    height: 50px;
-    width: auto;
+    height: auto;
+    width: 75%;
    }
 }
