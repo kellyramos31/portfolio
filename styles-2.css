@@ -449,7 +449,7 @@ form button {
    }
 
    #send-email-form {
-    margin-left: 30%;
+    margin-left: 28%;
    }
 
    form input, form textarea {
@@ -457,6 +457,7 @@ form button {
    }
 
    #captcha {
-    width: 15%;
+    height: 50px;
+    width: auto;
    }
 }
