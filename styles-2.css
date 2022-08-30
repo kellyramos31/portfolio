@@ -8,6 +8,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+
 }
 
 .nav-bar { 
@@ -172,7 +173,7 @@ p::after {
     /* justify-content: center; */
     align-items: center;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 #stem-project-container, #rtv-project-container {
@@ -267,7 +268,7 @@ p::after {
 #about-and-pic {
     width: 130%;
     display: flex;
-    margin-bottom: 6%;
+    margin-bottom: 12%;
     margin-left: 3%;
 }
 
@@ -286,6 +287,8 @@ p::after {
     width: 41.5%;
     background: linear-gradient(to right, rgba(0, 255, 255, 0.55), rgba(23, 32, 36, 0.7)), url("./assets/louvre-pyramid-bottom.jpg") no-repeat;
 }
+
+
 
 #send-msg {
     display: flex;
@@ -371,7 +374,7 @@ form button {
     #projects-nav,
     #about-nav,
     #contact-nav {
-       margin-bottom: -7.5%;
+       margin-bottom: -6%;
     }
 
     header {
@@ -433,7 +436,7 @@ form button {
 
     #about-and-pic {
         width: 105%;
-        margin-bottom: 25%;
+        margin-bottom: 30%;
     }
 
     #pic {
@@ -452,8 +455,9 @@ form button {
     margin-left: 32%;
    }
 
+ 
    form input, form textarea {
-    width: 90%;
+    width: 91%;
    }
 
 }
