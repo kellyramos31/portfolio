@@ -110,7 +110,7 @@ p::after {
     background: cyan;
     height: 4px;
     font-size: 10px;
-    margin-top: 15px;
+    margin-top: 14px;
 }
 
 .tech-icons-group {
@@ -354,32 +354,14 @@ form button {
 
 @media only screen and (max-width: 419px) {
     .nav-bar {
-        margin-top: -4%;
-        flex-direction: column;
+        justify-content: center;
     }
 
-    nav {
-        margin-left: 1%;
-    }
 
-    .contact-li-git-icons-nav {
-        flex-direction: column;
-        margin-left: -.025%;
-    }
     
-    .li-git-icons {
-        margin-left: 0;
-    }
-
-    #projects-nav,
-    #about-nav,
-    #contact-nav {
-       margin-bottom: -6%;
-    }
-
     header {
-        margin-top: 15%;
-        margin-bottom: 110%;
+        margin-top: 35%;
+        margin-bottom: 100%;
     }
 
      
@@ -388,7 +370,7 @@ form button {
     }
 
     p::after {
-        margin-top: 11px;
+        margin-top: 14px;
     }
 
     .icons {
@@ -440,7 +422,7 @@ form button {
     }
 
     #pic {
-        margin-top: 47%;
+        margin-top: 28%;
         margin-left: -2%;
         width: 108px;
     }
