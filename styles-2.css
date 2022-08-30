@@ -435,20 +435,16 @@ form button {
     }
 
     #about-and-pic {
-        width: 105%;
+        width: 140%;
         margin-bottom: 30%;
     }
 
-    #builder {
-        width: 155%;
-    }
-
     #pic {
-        margin-top: 44%;
-        margin-left: -2%;
-        width: 23%;
+        margin-top: 27%;
+        margin-left: -1%;
+        width: 115px;
     }
-
+  
    #overlay-4 {
     width: 72%;
    }
