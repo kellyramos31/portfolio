@@ -439,8 +439,14 @@ form button {
         margin-bottom: 30%;
     }
 
+    #builder {
+        width: 155%;
+    }
+
     #pic {
-        margin-top: 15%;
+        margin-top: 44%;
+        margin-left: -2%;
+        width: 23%;
     }
 
    #overlay-4 {
