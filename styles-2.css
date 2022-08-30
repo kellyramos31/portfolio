@@ -371,7 +371,7 @@ form button {
     }
 
     p::after {
-        margin-top: 11.5px;
+        margin-top: 11px;
     }
 
     .icons {
@@ -423,7 +423,7 @@ form button {
     }
 
     #pic {
-        margin-top: 43%;
+        margin-top: 45%;
         margin-left: -2%;
         width: 108px;
     }
