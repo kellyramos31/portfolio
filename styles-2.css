@@ -348,6 +348,7 @@ form button {
     border-radius: 4px;
     font-size: medium;
     color: black;
+    border: none;
     background-color: rgba(5, 239, 239, 0.9);
     margin-top: .5%;
 }
