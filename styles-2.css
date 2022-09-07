@@ -196,13 +196,15 @@ p::after {
     z-index: 3;
 }
 
-
-#stem-edu-screenshot-overlay, #rtv-screenshot-overlay {
-    height: auto;
-    width: 60%;
-    border-radius: 7px;
+#img-overlay {
+    opacity: .6;
 }
 
+#img-overlay:hover {
+    opacity: 1;
+    border-top: 6px solid cyan;
+    border-radius: 7px;
+}
 
  #stem-project-and-descrip, #rtv-project-and-descrip {
     height: 400px;
@@ -215,12 +217,6 @@ p::after {
     width: 100%;
     border-radius: 7px;
 }
-
-
-#stem-edu-screenshot-overlay:hover, #rtv-screenshot-overlay:hover {
-    box-shadow: 0 0 20px cyan;
-}
-
 
 .project-links {
     padding-top: 10px;
@@ -287,7 +283,6 @@ p::after {
     width: 41.5%;
     background: linear-gradient(to right, rgba(0, 255, 255, 0.55), rgba(23, 32, 36, 0.7)), url("./assets/louvre-pyramid-bottom.jpg") no-repeat;
 }
-
 
 
 #send-msg {
@@ -404,7 +399,8 @@ form button {
     #rtv-screenshot-overlay {
         height: 197.5px;
         width: 96.5%;
-        margin-top: -14%;
+        margin-top: -10%;
+        /* margin-top: -14%; */
 }
     #overlay-3 {
         width: 77%;
@@ -447,3 +443,7 @@ form button {
    }
 
 }
+
+
+
+
