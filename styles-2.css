@@ -401,9 +401,9 @@ form button {
         border-top: none;
         margin-top: -12%;
 }
-    /* #overlay-3 {
-        width: 77%;
-    } */
+  #img-overlay:hover {
+      border-top: none;
+  }
 
   
     #about-me {
