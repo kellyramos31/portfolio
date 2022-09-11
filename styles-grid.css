@@ -11,7 +11,6 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, auto);
-    grid-column-gap: 0;
 }
 
 html {
@@ -361,7 +360,7 @@ form button {
 
 
 
-@media (max-width: 912px) {
+@media only screen and (max-width: 912px) {
     nav {
         grid-column: 1 / 6;
     }
@@ -412,7 +411,7 @@ form button {
 
 }
 
-@media (max-width: 500px) {
+ @media only screen and (max-width: 650px) {
     nav {
         grid-column: 1 / 13;
     }
@@ -473,3 +472,8 @@ form button {
     }
 
 }
+
+
+/* @media only screen and (max-width: 415px) {
+
+} */
