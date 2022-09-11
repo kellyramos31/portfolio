@@ -361,7 +361,7 @@ form button {
 
 
 
-@media only screen and (max-width: 912px) {
+@media (max-width: 912px) {
     nav {
         grid-column: 1 / 6;
     }
@@ -412,7 +412,7 @@ form button {
 
 }
 
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
     nav {
         grid-column: 1 / 13;
     }
