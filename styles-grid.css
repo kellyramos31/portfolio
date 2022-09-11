@@ -422,7 +422,7 @@ form button {
 }
 
 
-
+/* 
 @media only screen and (max-width: 912px) {
     nav {
         grid-column: 1 / 6;
@@ -472,4 +472,4 @@ form button {
         margin-left: 10%;
     }
 
-}
+} */
