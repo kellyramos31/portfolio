@@ -361,68 +361,6 @@ form button {
 
 
 
-@media only screen and (max-width: 425px) {
-    nav {
-        grid-column: 1 / 13;
-    }
-
-    .nav-bar {
-        justify-content: center;
-    }
-
-    .header-info {
-        font-size: medium;
-        width: 60%;
-    }
-
-    .icons {
-        font-size: 30px;
-    }
-
-    #overlay-left,
-    #overlay-right {
-        width: 18%;
-    }
-
-    #name {
-        padding-top: 15%;
-
-    }
-
-    p::after {
-        margin-top: 34.5px;
-    }
-
-    #projects-container {
-        transform: translateX(-2.5%);
-    }
-
-    #stem-project-descrip, #rtv-project-descrip {
-        height: 325px;
-    }
-
-    #stem-edu-screenshot-overlay, #rtv-screenshot-overlay {
-        padding-bottom: 10px;
-        margin-left: 2%;
-    }
-
-
-    .project-links {
-        padding: 8%;
-    }
-
-    #about-me-grid {
-        grid-column: 1 / 13;
-    }
-
-    #contact-me-grid {
-        transform: translateX(3.5%);
-    }
-
-}
-
-
-/* 
 @media only screen and (max-width: 912px) {
     nav {
         grid-column: 1 / 6;
@@ -472,4 +410,66 @@ form button {
         margin-left: 10%;
     }
 
-} */
+}
+
+@media only screen and (max-width: 425px) {
+    nav {
+        grid-column: 1 / 13;
+    }
+
+    .nav-bar {
+        justify-content: center;
+    }
+
+    .header-info {
+        font-size: medium;
+        width: 60%;
+    }
+
+    .icons {
+        font-size: 30px;
+    }
+
+    #overlay-left,
+    #overlay-right {
+        width: 18%;
+    }
+
+    #name {
+        padding-top: 15%;
+
+    }
+
+    p::after {
+        margin-top: 34.5px;
+    }
+
+    #projects-container {
+        transform: translateX(-2.5%);
+    }
+
+    #stem-project-descrip,
+    #rtv-project-descrip {
+        height: 325px;
+    }
+
+    #stem-edu-screenshot-overlay,
+    #rtv-screenshot-overlay {
+        padding-bottom: 10px;
+        margin-left: 2%;
+    }
+
+
+    .project-links {
+        padding: 8%;
+    }
+
+    #about-me-grid {
+        grid-column: 1 / 13;
+    }
+
+    #contact-me-grid {
+        transform: translateX(3.5%);
+    }
+
+}
