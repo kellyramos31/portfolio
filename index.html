@@ -8,16 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/866fd0d220.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="styles.css">  -->
-    <link rel="stylesheet" href="styles-2.css">
+    <link rel="stylesheet" href="stylesgrid.css">
 </head>
 
 
 <body>
 
-    
+    <div id="grid-container">
         <nav class="nav-bar">
-            <!-- <a href=index.html>home</a> -->
             <a id="projects-nav" href="#projects">projects</a>
             <a id="about-nav" href="#about">about</a>
             <div class="contact-li-git-icons-nav">
@@ -29,15 +27,16 @@
                             style="font-size: 28px; margin-left: 25%; margin-top: -7%"></i></a>
                 </span>
             </div>
-         
+
         </nav>
 
+        <div id="header-grid">
             <header>
                 <div id="overlay-left"></div>
                 <div class="header-info">
                     <div id="name">kelly ramos</div>
                     <div id="dev">full-stack web developer</div>
-            
+
                     <div class="tech-icons-group">
                         <span class="about-icons">
 
@@ -52,12 +51,12 @@
                             </div>
 
                             <div class="icons">
-                                <i class="fa-brands fa-html5" style="align-self: center" ></i>
+                                <i class="fa-brands fa-html5" style="align-self: center"></i>
                                 <div class="icons-text">html5</div>
                             </div>
 
                             <div class="icons">
-                                <i class="fa-brands fa-css3-alt"style="align-self: center" ></i>
+                                <i class="fa-brands fa-css3-alt" style="align-self: center"></i>
                                 <div class="icons-text">css3</div>
                             </div>
                         </span>
@@ -67,153 +66,157 @@
                 </div>
                 <div id="overlay-right"></div>
             </header>
- 
-
-   <div id="projects"></div>
-   &nbsp
-   <div id="project-title-container">
-        <div class="sub-title">
-            <div id="overlay-3"></div>
-            <div id="projects-text">projects</div>
-            <div id="overlay-2"></div>
-        </div>
-    </div>
-
-
-  <div id="projects-container">
-        <div id="stem-project-container">
-            <div id="stem-project-descrip">
-                <div>
-                <p id="stem-text">
-                    <span class="project-name-bold">WiSE (Women in STEM Education)</span>, a full-stack learn-play app,
-                    combines a
-                    flashcard-style study
-                    area with game and discussion forum components focusing on women's historical accomplishments
-                    in the STEM fields.
-                </p>
-
-                <div class="tech-stack">react.js &nbsp&nbsp mongoDB &nbsp&nbsp mongoose &nbsp&nbsp express &nbsp&nbsp
-                    node.js &nbsp&nbsp axios &nbsp&nbsp token-based authentication
-                </div>
-
-                <div class="project-links">
-                    <a href= "https://github.com/kellyramos31/stem-edu" id="stem-edu-link" title="github"><i
-                            class="fa-brands fa-github"></i></a>
-                    <a href="https://stem-edu.herokuapp.com/"><i class="fa-solid fa-link" title="link"></i></a>
-                </div>
-                </div>
-            </div>
-         
-            <a class="screenshot-plus-link" href="https://stem-edu.herokuapp.com/">
-                <div id=img-overlay>
-                    <img src="./assets/stem-edu-screenshot-exact.png" id="stem-edu-screenshot-overlay">
-                </div>
-            </a>
         </div>
 
 
-        <div id="rtv-project-container">
-          
-          
-            <div id="rtv-project-descrip">
-                               
-                <p id="rtv-text">
-                    <span class="project-name-bold">Rock the Vote (RTV)</span> is a full-stack app that provides a political
-                    issues forum where users can add/edit/delete their own
-                    issues, comment on
-                    other users' issues, as well as upvote and downvote on all posted issues.
-                </p>
-            
-                <div class="tech-stack">react.js &nbsp&nbsp mongoDB &nbsp&nbsp mongoose &nbsp&nbsp express &nbsp&nbsp
-                    node.js &nbsp&nbsp axios &nbsp&nbsp token-based authentication
-                </div>
-            
-                <div class="project-links">
-                    <a id="rock-vote-link" href="https://github.com/kellyramos31/rtv" title="github"><i
-                            class="fa-brands fa-github"></i></a>
-                    <a href="https://rock-vote.herokuapp.com/"><i class="fa-solid fa-link" title="link"></i></a>
-                </div>
+        <div id="projects"></div>
+        &nbsp
+        <div class="subtitle-container-grid">
+            <div class="sub-title">
+                <div id="overlay-3"></div>
+                <div id="projects-text">projects</div>
+                <div id="overlay-2"></div>
             </div>
-        <a class="screenshot-plus-link" href="https://rock-vote.herokuapp.com/">
-            <div id=img-overlay>
-                <img src="./assets/rtv-screenshot.png" id="rtv-screenshot-overlay">
+        </div>
+
+
+        <div id="projects-container">
+            <div id="stem-project-container">
+                <div id="stem-project-descrip">
+                    <div>
+                        <p id="stem-text">
+                            <span class="project-name-bold">WiSE (Women in STEM Education)</span>, a full-stack
+                            learn-play
+                            app,
+                            combines a
+                            flashcard-style study
+                            area with game and discussion forum components focusing on women's historical
+                            accomplishments
+                            in the STEM fields.
+                        </p>
+
+                        <div class="tech-stack">react.js &nbsp&nbsp mongoDB &nbsp&nbsp mongoose &nbsp&nbsp express
+                            &nbsp&nbsp
+                            node.js &nbsp&nbsp axios &nbsp&nbsp token-based authentication
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/kellyramos31/stem-edu" id="stem-edu-link" title="github"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://stem-edu.herokuapp.com/"><i class="fa-solid fa-link" title="link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="screenshot-plus-link" href="https://stem-edu.herokuapp.com/">
+                    <div id=img-overlay>
+                        <img src="./assets/stem-edu-screenshot-exact.png" id="stem-edu-screenshot-overlay">
+                    </div>
+                </a>
             </div>
-        </a>
-      
-         </div>
-    </div>
+
+
+            <div id="rtv-project-container">
+
+
+                <div id="rtv-project-descrip">
+
+                    <p id="rtv-text">
+                        <span class="project-name-bold">Rock the Vote (RTV)</span> is a full-stack app that provides a
+                        political
+                        issues forum where users can add/edit/delete their own
+                        issues, comment on
+                        other users' issues, as well as upvote and downvote on all posted issues.
+                    </p>
+
+                    <div class="tech-stack">react.js &nbsp&nbsp mongoDB &nbsp&nbsp mongoose &nbsp&nbsp express
+                        &nbsp&nbsp
+                        node.js &nbsp&nbsp axios &nbsp&nbsp token-based authentication
+                    </div>
+
+                    <div class="project-links">
+                        <a id="rock-vote-link" href="https://github.com/kellyramos31/rtv" title="github"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://rock-vote.herokuapp.com/"><i class="fa-solid fa-link" title="link"></i></a>
+                    </div>
+                </div>
+                <a class="screenshot-plus-link" href="https://rock-vote.herokuapp.com/">
+                    <div id=img-overlay>
+                        <img src="./assets/rtv-screenshot.png" id="rtv-screenshot-overlay">
+                    </div>
+                </a>
+
+            </div>
+        </div>
 
 
 
         <div id="about"></div>
         &nbsp
-        <div class="sub-title">
-            <div id="overlay-3"></div>
-            <div id="about-text">about</div>
-            <div id="overlay-4"></div>
+
+        <div class="subtitle-container-grid">
+            <div class="sub-title">
+                <div id="overlay-3"></div>
+                <div id="about-text">about</div>
+                <div id="overlay-4"></div>
+            </div>
+        </div>
+
+        <div id="about-me-grid">
+            <div id="about-and-pic">
+
+
+                <div id="about-me">
+                    <p id="builder">builder, problem-solver, collaborator</p>
+                    <div id="me-detail">
+                        What I love about building for the web is the intersection of logic and creativity.
+                        I am a persistent problem-solver with a growth mindset, who enjoys collaboration and the way
+                        tech
+                        naturally emphasizes
+                        lifelong learning.
+                    </div>
+                </div>
+
+                <img id="pic" src="./assets/150-abt-pic.jpg" width="150px" height="100%" alt="pic" />
+
+            </div>
         </div>
 
 
-        <div id="about-and-pic">
+        <div id="contactme"></div>
 
-       
+        <div class="subtitle-container-grid">
+            <div class="sub-title">
+                <div id="overlay-4"></div>
+                <div id="contact-text">contact</div>
+                <div id="overlay-2"></div>
+            </div>
+        </div>
 
-            <div id="about-me">
-                <p id="builder">builder, problem-solver, collaborator</p>
-                <div id="me-detail">
-                    What I love about building for the web is the intersection of logic and creativity.  
-                    I am a persistent problem-solver with a growth mindset, who enjoys collaboration and the way tech naturally emphasizes
-                    lifelong learning. 
+        <div id="contact-me-grid">
+            <div id="send-msg">
+
+        
+                <div id="send-email-form">
+
+                    <form name="contact" action="POST" data-netlify="true">
+                        <div id="get-in-touch">let's connect.</div>
+                        <div class="field">
+                            <input type="text" name="name" placeholder="name" />
+                        </div>
+                        <div class="field">
+                            <input type="email" name="email" placeholder="email" />
+                        </div>
+                        <div class="field">
+                            <textarea name="message" placeholder="message" rows="7"></textarea>
+                        </div>
+                      <button type="submit">submit message</button>
+
+                    </form>
                 </div>
             </div>
-
-            <img id="pic" src="./assets/150-abt-pic.jpg" width="150px" height="100%" alt="pic" />
-
         </div>
-
-
-   
-    <div id="contactme"></div>
-                <div class="sub-title">
-                    <div id="overlay-4"></div>
-                    <div id="contact-text">contact</div>
-                    <div id="overlay-2"></div>
-                </div>
-
-        <div id="send-msg">
-        
-        <!-- ****figure out how to use Netlify form for this*** -->
-        <div id="send-email-form">
-     
-           <form name="contact" action="POST" data-netlify="true">
-            <div id="get-in-touch">let's connect.</div>
-                <div class="field">
-                    <input 
-                        type="text"
-                        name="name"
-                        placeholder="name"
-                    />
-                </div>
-                <div class="field">
-                    <input 
-                        type="email" 
-                        name="email" 
-                        placeholder="email"
-                        />
-                </div>
-                <div class="field">
-                    <textarea name="message" placeholder="message" rows="7"></textarea>
-                </div>
-                <!-- <div class="field">
-                    <div id="captcha" data-netlify-recaptcha="true"></div>
-                </div> -->
-
-                <button type="submit">submit message</button>
-
-           </form>
-        </div>
-        </div>
-
+    </div>
 
 
 </body>
