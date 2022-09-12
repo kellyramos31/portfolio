@@ -376,7 +376,12 @@ form button {
     }
 
     #name {
-        padding-top: 7%;
+        padding-top: 7.5%;
+        font-size: 28px;
+    }
+
+    #dev {
+        font-size: 24px;
     }
 
    .icons {
