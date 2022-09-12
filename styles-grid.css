@@ -250,15 +250,19 @@ p::after {
 }
 
 #about-me-grid {
-    grid-column: 1 / 7;
-    margin: 6% 0 1% 1%;
+    grid-column: 5 / 11;
+    margin: 1% 0 1% 1%;
 }
 
 #about-and-pic {
     display: flex;
     justify-content: flex-start;
     width: 92%;
-    margin-bottom: 10%;
+    margin: 2% 0 12% 0;
+}
+
+#about-me {
+    width: 60%;
 }
 
 #builder {
@@ -295,8 +299,8 @@ p::after {
 }
 
 #contact-me-grid {
-    grid-column: 8 / 13;
-    margin: 2% 0 0 9%;
+    grid-column: 5 / 11;
+    margin: 5% 0 10% 0;
 }
 
 #send-msg {
@@ -358,18 +362,32 @@ form button {
     margin-top: .5%;
 }
 
-
-
-@media only screen and (min-width: 360px) and (max-width: 912px) {
+@media only screen and (max-width: 912px) {
     nav {
         grid-column: 1 / 13;
+      
     }
 
     .nav-bar {
         justify-content: center;
-        margin: unset;
     }
 
+    .header-info {
+        width: 55%;
+    }
+
+   .icons {
+        font-size: 38px;
+    }
+
+    #overlay-left, #overlay-right {
+        width: 20%;
+    }
+
+    p::after {
+         margin-top: 17px;
+    }
+   
     #projects-container {
         grid-column: 2 / 12;
     }
@@ -377,64 +395,106 @@ form button {
     #stem-project-container,
     #rtv-project-container {
         flex-direction: column;
-        margin-bottom: -40%;
-
+        margin-bottom: -45%;
     }
 
     #stem-project-descrip,
     #rtv-project-descrip {
-        padding-bottom: 20px;
-        width: 95%;
-        padding-bottom: 44%;
+        width: 90%;
+        padding: 5% 5% 50% 5%;
+        font-size: small;
+        /* margin-right: unset; */
         z-index: unset;
     }
 
-
+  
     #stem-edu-screenshot-overlay,
     #rtv-screenshot-overlay {
         height: auto;
-        transform: translate(-2%, -114%);
+        transform: translate(-2%, -125%);
     }
 
-    #overlay-4 {
-        width: 5%;
-    }
+    /* #overlay-4 {
+        width: 2%;
+    } */
 
     #about-me-grid {
-        grid-column: 1 / 11;
-        margin-bottom: 10%;
+        grid-column: 1 / 13;
+        margin: 10% 0 10% 0;
     }
 
     #contact-me-grid {
         grid-column: 3 / 13;
     }
 
+    #about-and-pic {
+        margin: 10% 0 12% 4%;
+    }
+
+    #about-me {
+       width: 87%;
+    }
+    
     #send-msg {
-        justify-content: flex-start;
-        margin-left: 10%;
+        margin: 10% 0 10% -3%;
+        justify-content: center;
     }
 
 }
 
- @media only screen and (max-width: 412px) {
+/* @media only screen and (max-width: 415px) {
+    nav {
+        grid-column: 1 / 13;
+    }
 
-   #overlay-left, #overlay-right {
+    .nav-bar {
+        justify-content: center;
+    }
 
-   }
-   
-    #stem-project-descrip,
-        #rtv-project-descrip {
-            padding-bottom: 58%;
-        }
+    .header-info {
+        font-size: medium;
+        width: 60%;
+    }
 
-        #stem-edu-screenshot-overlay, #rtv-screenshot-overlay {
-            padding-bottom: 3%;
-        }
+    .icons {
+        font-size: 30px;
+    }
+
+    #overlay-left,
+    #overlay-right {
+        width: 18%;
+    }
+
+    #name {
+        padding-top: 15%;
+
+    }
+
+    p::after {
+        margin-top: 34.5px;
+    }
 
     #projects-container {
         transform: translateX(-2.5%);
     }
-  
 
-}
 
+    #stem-project-descrip,
+    #rtv-project-descrip {
+        padding-bottom: 75%;
+    }
+
+    #stem-edu-screenshot-overlay,
+    #rtv-screenshot-overlay {
+        transform: translate(1%, -125%);
+    }
+
+    #about-me-grid {
+        grid-column: 1 / 13;
+    }
+
+    #contact-me-grid {
+        transform: translateX(3.5%);
+    }
+
+} */
