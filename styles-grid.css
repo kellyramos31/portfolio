@@ -372,16 +372,17 @@ form button {
     }
 
     .header-info {
-        width: 58%;
+        width: 75%;
     }
 
     #name {
-        padding-top: 7.5%;
-        font-size: 28px;
+        padding-top: 9%;
+        font-size: 24px;
     }
 
+
     #dev {
-        font-size: 24px;
+        font-size: 18px;
     }
 
    .icons {
@@ -392,8 +393,12 @@ form button {
         width: 20%;
     }
 
-    p::after {
-         margin-top: 17px;
+    #name {
+        padding-top: 15%;
+    }
+
+    p::after {           
+        margin-top: 38px;
     }
    
     #projects-container {
