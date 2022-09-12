@@ -379,11 +379,7 @@ overlay-6 {
         justify-content: flex-start;
     }
 
-    #header-grid{
-   
-    }
-
-     #overlay-2, #overlay-3 {
+    #overlay-2, #overlay-3 {
         height: 1.5rem;
     }
 
@@ -443,7 +439,6 @@ overlay-6 {
         width: 90%;
         padding: 5% 5% 62% 5%;
         font-size: small;
-        /* margin-right: unset; */
         z-index: unset;
     }
 
