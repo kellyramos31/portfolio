@@ -124,7 +124,7 @@ p::after {
     background: cyan;
     height: 4px;
     font-size: 10px;
-    margin-top: 14px;
+    /* margin-top: 14px; */
 }
 
 .tech-icons-group {
@@ -362,27 +362,55 @@ form button {
     margin-top: .5%;
 }
 
+overlay-5 {
+    display: none;
+}
+
+overlay-6 {
+    display: none;
+}
+
 @media only screen and (max-width: 912px) {
     nav {
         grid-column: 1 / 13;
     }
 
     .nav-bar {
-        justify-content: center;
+        justify-content: flex-start;
+    }
+
+    #header-grid{
+   
+    }
+
+     #overlay-2, #overlay-3 {
+        height: 1.5rem;
+    }
+
+
+    header {
+        margin-top:  33%;
+        margin-bottom: 115%;
     }
 
     .header-info {
-        width: 75%;
+        width: 76%;
+        height: auto;
+        border-bottom: 3.75px solid cyan;
+        border-top: 3.75px solid cyan;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #overlay-left, #overlay-right {
-        width: 10%;
+        height: auto;
+        width: 14%;
     }
 
   
     #name {
-        padding-top: 7.5%;
         font-size: 24px;
+        padding: 2%;
     }
 
 
@@ -391,18 +419,15 @@ form button {
     }
 
    .icons {
-        font-size: 24px;
+        font-size: 30px;
     }
 
-
-    /* #name {
-        padding-top: 30px;
-    }*/
-
+ 
     p::after {           
-        margin-top: 17px;
+        background: none;
     }
-   
+
+ 
     #projects-container {
         grid-column: 2 / 12;
     }
