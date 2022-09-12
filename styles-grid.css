@@ -251,7 +251,7 @@ p::after {
 
 #about-me-grid {
     grid-column: 5 / 11;
-    margin: 1% 0 1% 1%;
+    margin: 10% 0 10% 1%;
 }
 
 #about-and-pic {
@@ -365,7 +365,6 @@ form button {
 @media only screen and (max-width: 912px) {
     nav {
         grid-column: 1 / 13;
-      
     }
 
     .nav-bar {
@@ -424,7 +423,7 @@ form button {
 
     #about-me-grid {
         grid-column: 1 / 13;
-        margin: 10% 0 10% 0;
+        margin: 12% 0 15% 0;
     }
 
     #contact-me-grid {
@@ -432,7 +431,7 @@ form button {
     }
 
     #about-and-pic {
-        margin: 10% 0 12% 4%;
+        margin: 0 0 0 4%;
     }
 
     #about-me {
@@ -446,59 +445,3 @@ form button {
 
 }
 
-/* @media only screen and (max-width: 415px) {
-    nav {
-        grid-column: 1 / 13;
-    }
-
-    .nav-bar {
-        justify-content: center;
-    }
-
-    .header-info {
-        font-size: medium;
-        width: 60%;
-    }
-
-    .icons {
-        font-size: 30px;
-    }
-
-    #overlay-left,
-    #overlay-right {
-        width: 18%;
-    }
-
-    #name {
-        padding-top: 15%;
-
-    }
-
-    p::after {
-        margin-top: 34.5px;
-    }
-
-    #projects-container {
-        transform: translateX(-2.5%);
-    }
-
-
-    #stem-project-descrip,
-    #rtv-project-descrip {
-        padding-bottom: 75%;
-    }
-
-    #stem-edu-screenshot-overlay,
-    #rtv-screenshot-overlay {
-        transform: translate(1%, -125%);
-    }
-
-    #about-me-grid {
-        grid-column: 1 / 13;
-    }
-
-    #contact-me-grid {
-        transform: translateX(3.5%);
-    }
-
-} */
