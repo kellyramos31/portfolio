@@ -437,13 +437,17 @@ form button {
 
 
     #contact-me-grid {
-        grid-column: 3 / 11;
+        grid-column: 2 / 12;
         /* margin-bottom: 30%; */
     }
 
     #pic {
         margin-top: -1%;
         width: 28%;
+    }
+
+    #builder {
+        font-size: large;
     }
 
     #about-me {
