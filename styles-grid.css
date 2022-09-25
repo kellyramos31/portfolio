@@ -352,6 +352,7 @@ form button {
     .nav-bar {
       padding-bottom: unset;
       right: 0;
+      font-size: small;
     }
 
 
@@ -393,6 +394,7 @@ form button {
 
     #about-text {
          margin-top: 80%;
+         margin-bottom: -3%;
     }
 
     #contact-text {
@@ -436,7 +438,7 @@ form button {
 
     #contact-me-grid {
         grid-column: 3 / 11;
-        margin-bottom: 70%;
+        margin-bottom: 750%;
     }
 
     #pic {
