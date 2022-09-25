@@ -402,7 +402,7 @@ form button {
    
     #about-me-grid {
         margin-top: 10%;
-        margin-bottom: 100%;
+        margin-bottom: 120%;
     }
  
     #projects-container {
@@ -438,7 +438,7 @@ form button {
 
     #contact-me-grid {
         grid-column: 3 / 11;
-        margin-bottom: 30%;
+        /* margin-bottom: 30%; */
     }
 
     #pic {
