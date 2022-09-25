@@ -15,24 +15,35 @@ body {
 
 html {
     scroll-behavior: smooth;
-
 }
 
 nav {
-    grid-column: 11 / 12;
+    position: fixed;
+    right: 2%;
+    grid-column: 1 / 13;
+    font-size: medium;
+    z-index: 10;
 }
 
 .nav-bar {
     display: flex;
     justify-content: flex-end;
+    background-color: black;
+    padding:  1px 35px 10px 40px;
+    border-radius: 7px;
 }
+
+#contact-nav {
+    margin-left: 18%;
+}
+
 
 a {
     color: cyan;
     text-decoration: none;
-    margin-top: 30px;
-    margin-left: 4%;
+    margin-top: 15px;
     font-size: larger;
+    margin-left: 4%;
 }
 
 a:hover {
@@ -42,8 +53,9 @@ a:hover {
 
 .contact-li-git-icons-nav {
     display: flex;
-    margin-left: 4%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 4%;
+
 }
 
 .li-git-icons {
@@ -58,21 +70,10 @@ a:hover {
 header {
     display: flex;
     justify-content: flex-start;
-    animation: slideInLeft 3s;
-    margin: 5% 0 15% 0;
+    animation: fadeIn 5s;
+    margin: 8% 0 20% 0;
 }
 
-
-
-@keyframes slideInLeft {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
 
 #overlay-left {
     opacity: 1;
@@ -99,7 +100,10 @@ header {
     font-size: x-large;
     height: auto;
     border-top: 4px solid cyan;
+    border-bottom: 4px solid cyan;
 }
+
+
 
 #name {
     padding-top: 5%;
@@ -123,6 +127,7 @@ p::after {
     background: cyan;
     height: 4px;
     font-size: 10px;
+    margin-top: 15px;
 }
 
 .tech-icons-group {
@@ -150,35 +155,24 @@ p::after {
 #stack {
     font-size: medium;
     text-align: center;
-    padding-top:  5%;
-
+    padding-top:  8%;
 }
 
 .subtitle-container-grid {
     grid-column: 1 / 13;
+    margin-left: 35%;
+    margin-right: 35%;
 }
 
 
-.sub-title {
-    display: flex;
-    justify-content: center;
-}
-
-
-#projects-text {
+#projects-text, #about-text, #contact-text {
     font-size: x-large;
-    margin: 0 5% 0 5%;
+    text-align: center;
+    border-top: 4px solid cyan;
+    padding-top: 2%;
+    margin-top: 5%;
 }
 
-#about-text {
-    font-size: x-large;
-    margin: 0 5.75% 0 5.75%;
-}
-
-#contact-text {
-    font-size: x-large;
-    margin: 0 3.5% 0 4.55%;
-}
 
 
 .project-name-bold {
@@ -186,12 +180,6 @@ p::after {
     color: rgb(227, 250, 250);
 }
 
-#overlay-2 {
-    opacity: 1;
-    height: 2rem;
-    width: 100%;
-    background: linear-gradient(to right, rgba(0, 255, 255, 0.55), rgba(23, 32, 36, 0.7)), url("./assets/louvre-pyramid-bottom.jpg") no-repeat;
-}
 
 
 #projects-container {
@@ -219,7 +207,7 @@ p::after {
     border: 2px solid cyan;
     text-align: center;
     padding: 5px 15px 0 15px;
-    margin: 4.35% -12% 0 0;
+    margin: 3.25% -12% 0 0;
     z-index: 3;
 }
 
@@ -250,24 +238,28 @@ p::after {
 }
 
 #about-me-grid {
-    grid-column: 5 / 11;
-    margin: 10% 0 10% 1%;
+    grid-column: 1 / 13;
+    margin-bottom: 10%;
 }
 
 #about-and-pic {
     display: flex;
-    justify-content: flex-start;
-    width: 92%;
-    margin: 2% 0 12% 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2% 0 5% 0;
 }
 
 #about-me {
-    width: 60%;
+    width: 38%;
 }
 
+
+
 #builder {
+    margin-top: 2%;
+    text-align: center;
     font-size: x-large;
-    padding-bottom: -1%;
     color: rgb(227, 250, 250);
 }
 
@@ -278,40 +270,31 @@ p::after {
     font-size: medium;
 }
 
+#me-detail {
+    margin: 3% 15% 0 15%;
+    text-align: center;
+}
 
 #pic {
-    margin: 4.75% 0 0 2%;
+    margin: 3% 1.85% 3% 2%;
     border-radius: 50%;
+    width: 10%;
 }
 
-#overlay-3 {
-    opacity: 1;
-    height: 2rem;
-    width: 100%;
-    background: linear-gradient(to right, rgba(23, 32, 36, 0.7), rgb(21, 255, 255, 0.4)), url("./assets/louvre-pyramid-bottom.jpg") no-repeat;
-}
-
-#overlay-4 {
-    opacity: 1;
-    height: 2rem;
-    width: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0, 0)) no-repeat;
-}
 
 #contact-me-grid {
-    grid-column: 5 / 11;
-    margin: 5% 0 10% 0;
+   grid-column: 5 / 9;
 }
 
 #send-msg {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    text-align: center;
 }
 
 
 #get-in-touch {
-    padding-top: 10px;
+    margin-top: 15%;
     padding-bottom: 10px;
     font-size: x-large;
     color: rgb(227, 250, 250);
@@ -359,48 +342,33 @@ form button {
     color: black;
     border: none;
     background-color: rgba(5, 239, 239, 0.9);
-    margin-top: .5%;
+    margin-top: 7%;
 }
 
-overlay-5 {
-    display: none;
-}
 
-overlay-6 {
-    display: none;
-}
 
 @media only screen and (max-width: 912px) {
-    nav {
-        grid-column: 1 / 13;
-    }
 
     .nav-bar {
-        justify-content: flex-start;
-    }
-
-    #overlay-2, #overlay-3 {
-        height: 1.5rem;
+      margin-right: 7%;
+      padding-bottom: unset;
     }
 
 
     header {
-        margin-top:  33%;
+        margin-top: 40%;
         margin-bottom: 115%;
     }
 
     .header-info {
         width: 76%;
         height: auto;
-        border-bottom: 3.75px solid cyan;
-        border-top: 3.75px solid cyan;
-        margin-left: auto;
-        margin-right: auto;
+        font-size: small;
     }
 
     #overlay-left, #overlay-right {
         height: auto;
-        width: 14%;
+        width: 25%;
     }
 
   
@@ -417,12 +385,24 @@ overlay-6 {
    .icons {
         font-size: 30px;
     }
+    
 
- 
-    p::after {           
-        background: none;
+    #projects-text {
+        margin-top: 40%;
+        }
+
+    #about-text {
+         margin-top: 80%;
     }
 
+    #contact-text {
+        margin: unset;
+    }
+   
+    #about-me-grid {
+        margin-top: 10%;
+        margin-bottom: 75%;
+    }
  
     #projects-container {
         grid-column: 2 / 12;
@@ -431,13 +411,13 @@ overlay-6 {
     #stem-project-container,
     #rtv-project-container {
         flex-direction: column;
-        margin-bottom: -45%;
+        margin-bottom: -25%;
     }
 
     #stem-project-descrip,
     #rtv-project-descrip {
         width: 90%;
-        padding: 5% 5% 62% 5%;
+        padding: 5% 5% 50% 5%;
         font-size: small;
         z-index: unset;
     }
@@ -446,34 +426,27 @@ overlay-6 {
     #stem-edu-screenshot-overlay,
     #rtv-screenshot-overlay {
         height: auto;
-        transform: translate(-2%, -125%);
+        transform: translate(-1%, -112%);
     }
 
- #img-overlay:hover {
-     border-top: none;
- }
-
-    #about-me-grid {
-        grid-column: 1 / 13;
-        margin: 12% 0 15% 0;
+    #img-overlay:hover {
+        border-top: none;
     }
+
 
     #contact-me-grid {
-        grid-column: 3 / 13;
+        grid-column: 3 / 11;
+        margin-bottom: 80%;
     }
 
-    #about-and-pic {
-        margin: 0 0 0 4%;
+    #pic {
+        margin-top: 7%;
+        width: 28%;
     }
 
     #about-me {
        width: 87%;
     }
-    
-    #send-msg {
-        margin: 10% 0 10% -3%;
-        justify-content: center;
-    }
-
+ 
 }
 
