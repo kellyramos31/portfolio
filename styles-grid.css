@@ -350,7 +350,6 @@ form button {
 @media only screen and (max-width: 912px) {
 
     .nav-bar {
-      margin-right: 7%;
       padding-bottom: unset;
     }
 
@@ -368,7 +367,7 @@ form button {
 
     #overlay-left, #overlay-right {
         height: auto;
-        width: 25%;
+        width: 19%;
     }
 
   
@@ -417,7 +416,7 @@ form button {
     #stem-project-descrip,
     #rtv-project-descrip {
         width: 90%;
-        padding: 5% 5% 50% 5%;
+        padding: 5% 5% 60% 5%;
         font-size: small;
         z-index: unset;
     }
@@ -426,7 +425,7 @@ form button {
     #stem-edu-screenshot-overlay,
     #rtv-screenshot-overlay {
         height: auto;
-        transform: translate(-1%, -112%);
+        transform: translate(-1%, -120%);
     }
 
     #img-overlay:hover {
@@ -436,11 +435,11 @@ form button {
 
     #contact-me-grid {
         grid-column: 3 / 11;
-        margin-bottom: 80%;
+        margin-bottom: 75%;
     }
 
     #pic {
-        margin-top: 7%;
+        margin-top: 1%;
         width: 28%;
     }
 
