@@ -394,7 +394,6 @@ form button {
 
     #about-text {
          margin-top: 80%;
-         margin-bottom: -3%;
     }
 
     #contact-text {
@@ -403,7 +402,7 @@ form button {
    
     #about-me-grid {
         margin-top: 10%;
-        margin-bottom: 75%;
+        margin-bottom: 85%;
     }
  
     #projects-container {
@@ -442,7 +441,6 @@ form button {
     }
 
     #pic {
-        margin-top: 1%;
         width: 28%;
     }
 
