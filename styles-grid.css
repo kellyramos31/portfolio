@@ -438,7 +438,7 @@ form button {
 
     #contact-me-grid {
         grid-column: 3 / 11;
-        margin-bottom: 50%;
+        margin-bottom: 30%;
     }
 
     #pic {
@@ -448,6 +448,11 @@ form button {
 
     #about-me {
        width: 87%;
+    }
+
+    #me-detail {
+        margin-left: 12%;
+        margin-right: 12%;
     }
 
     #get-in-touch {
