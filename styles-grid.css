@@ -407,6 +407,7 @@ form button {
  
     #projects-container {
         grid-column: 2 / 12;
+        margin-bottom: -3%;
     }
 
     #stem-project-container,
@@ -437,10 +438,11 @@ form button {
 
     #contact-me-grid {
         grid-column: 3 / 11;
-        margin-bottom: 75%;
+        margin-bottom: 60%;
     }
 
     #pic {
+        margin-top: -1%;
         width: 28%;
     }
 
