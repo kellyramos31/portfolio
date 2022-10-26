@@ -570,7 +570,7 @@ form button {
    #contact-button{
     font-size: 0.5em;
     grid-column: 9 / 11;
-    transform: translate(-3%, 118%);   
+    transform: translate(-1%, 112%);   
 }
 
    #behind-contact-button{

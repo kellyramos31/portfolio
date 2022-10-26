@@ -22,3 +22,9 @@ document.getElementById("contact-button").addEventListener("click", (e) => {
   const contact = document.getElementById("contact");
   contact.scrollIntoView();
 });
+
+document.getElementById("behind-contact-button").addEventListener("click", (e) => {
+  e.preventDefault();
+  const contact = document.getElementById("contact");
+  contact.scrollIntoView();
+});
