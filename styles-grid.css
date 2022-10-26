@@ -545,7 +545,7 @@ form button {
 
     #tagline-top1, #tagline-top2{
         width: 90%;
-        font-size: 1.0em;
+        font-size: 0.9em;
     }
 
   #tagline-top2{
@@ -557,18 +557,18 @@ form button {
     margin:unset;
     margin-left: 3%;
     padding: 8% 9.5% 8% 9%;
-    font-size: 0.8em;
+    font-size: 0.75em;
    }
 
    #tagline-bottom {
     grid-column: 6 / 9;
     margin-left: -8.3%;
     padding: 33% 28% 0% 20%;
-    font-size: 0.85em;
+    font-size: 0.8em;
    }
 
    #contact-button{
-    font-size: 0.7em;
+    font-size: 0.6em;
     grid-column: 9 / 11;
     transform: translate(-3%, 118%);   
 }
