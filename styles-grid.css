@@ -490,7 +490,7 @@ form button {
 
 
 
-@media only screen and (max-width: 912px) {
+@media only screen and (max-width: 980px) {
 
     #tagline-top1,
         #tagline-top2 {
@@ -560,6 +560,7 @@ form button {
 
    .tagline-mid{
     grid-column: 1 / 13;
+    text-align: center;
     margin: unset;
     padding: unset;
     width: 30%;
@@ -568,9 +569,7 @@ form button {
     border-left: none;
     border-top: 9px double cyan;
     background: linear-gradient(rgba(23, 32, 36, 0.7), rgba(0, 255, 255, 0.55));
-    padding: 8% 10% 5% 10%;
-    /* margin-left: 3%;
-    padding: 8% 10.75% 8% 9%;*/
+    padding: 5% 10% 3% 10%;
     font-size: 0.95em;
    }
 
