@@ -568,12 +568,12 @@ form button {
    }
 
    #contact-button{
-    font-size: .6em;
+    font-size: .4em;
     grid-column: 9 / 11;
     width: 100%;
     transform: translate(0,0);
     margin-top: 65%;
-    margin-left: .5%;
+    margin-left: .25%;
     text-align: center;
     padding-right: 1%;
     /* transform: translate(-7%, 108%);    */
