@@ -570,10 +570,11 @@ form button {
    #contact-button{
     font-size: .6em;
     grid-column: 9;
-    width: 90%;
+    width: 80%;
     transform: translate(0,0);
     margin-top: 65%;
     margin-left: .5%;
+    text-align: center;
     /* transform: translate(-7%, 108%);    */
 
 }
