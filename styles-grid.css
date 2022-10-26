@@ -584,7 +584,7 @@ form button {
    #contact-button{
     font-size: .8em;
     grid-column: 5 / 10;
-    transform: translate(20%, 0);
+    transform: translate(10%, 0);
 }
 
    #behind-contact-button{
