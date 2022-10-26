@@ -571,7 +571,7 @@ form button {
     padding: unset;
     font-size: 0.95em;
     text-align: center;
-    padding: 5% 24% 5% 24%;
+    padding: 5% 23% 5% 24%;
     /* padding-left:  20%;
     padding-right: 20%;
     padding-top: 10%; 
@@ -584,7 +584,7 @@ form button {
    #contact-button{
     font-size: .8em;
     grid-column: 5 / 10;
-    transform: translate(10%, 0);
+    transform: translate50%, 0);
 }
 
    #behind-contact-button{
