@@ -569,7 +569,7 @@ form button {
     border-left: none;
     border-top: 9px double cyan;
     background: linear-gradient(rgba(23, 32, 36, 0.7), rgba(0, 255, 255, 0.55));
-    padding: 2% 8% 2% 7%;
+    padding: 0% 8% 0% 7%;
     font-size: 0.95em;
    }
 
@@ -606,8 +606,8 @@ form button {
     background: linear-gradient(rgba(0, 255, 255, 0.55), rgba(23, 32, 36, 0.7));
     border-right: none;
     border-bottom: 9px double cyan;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     width: 50%;
     /* margin-left: -35%;
     padding:  0 7% 0 7%;
