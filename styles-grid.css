@@ -174,6 +174,8 @@ header {
         }
 
 
+
+
 .tagline-mid{
     display: block;
     animation: fade-in 6s;
@@ -490,6 +492,11 @@ form button {
 
 @media only screen and (max-width: 912px) {
 
+    #tagline-top1,
+        #tagline-top2 {
+            width: 100%;
+        }
+
             @keyframes fade-out {
                     from {
                         color: black;
@@ -500,7 +507,7 @@ form button {
             
                     to {
                         background-color: black;
-                        margin-left: 0;
+                        margin-left: auto;
                         /* margin-left: 0; */
                         opacity: 1;
                     }
@@ -544,7 +551,6 @@ form button {
     }
 
     #tagline-top1, #tagline-top2{
-        width: 90%;
         font-size: 0.9em;
     }
 
@@ -553,25 +559,29 @@ form button {
   }
 
    .tagline-mid{
-    grid-column: 5 / 10;
-    margin:unset;
-    text-align: center;
+    grid-column: 1 / 13;
+    margin: unset;
+    padding: unset;
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
     border-left: none;
     border-top: 9px double cyan;
     background: linear-gradient(rgba(23, 32, 36, 0.7), rgba(0, 255, 255, 0.55));
-    padding: 10% 10% 5% 10%;
+    padding: 8% 10% 5% 10%;
     /* margin-left: 3%;
     padding: 8% 10.75% 8% 9%;*/
     font-size: 0.95em;
    }
 
    #tagline-bottom {
-    grid-column: 5 / 10;
-    margin: unset;
-    padding: unset;
+    grid-column: 1 / 13;
+    width: 15%;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 0.95em;
     text-align: center;
-    padding: 5% 23% 5% 24%;
+    padding:  10% 16.5% 10% 16.5%;
     /* padding-left:  20%;
     padding-right: 20%;
     padding-top: 10%; 
@@ -582,19 +592,23 @@ form button {
    }
 
    #contact-button{
-    font-size: .8em;
-    grid-column: 5 / 10;
-    transform: translate(8%, 0);
+    transform: translate(0,0);
+    font-size: .9em;
+    grid-column: 1 / 13;
 }
 
    #behind-contact-button{
-    grid-column: 5 / 9;
-    background: linear-gradient(0deg, rgba(0, 255, 255, 0.55), rgba(23, 32, 36, 0.7));
+    margin: unset;
+    text-align: center;
+    grid-column: 1 / 13;
+    margin-right: auto;
+    margin-left: auto;
+    background: linear-gradient(rgba(0, 255, 255, 0.55), rgba(23, 32, 36, 0.7));
     border-right: none;
     border-bottom: 9px double cyan;
-    margin: unset;
-    padding-top: 15%;
-    padding-bottom: 15%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 50%;
     /* margin-left: -35%;
     padding:  0 7% 0 7%;
     width: 100%; */
