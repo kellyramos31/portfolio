@@ -497,17 +497,17 @@ form button {
             width: 100%;
         }
 
-            @keyframes fade-out {
+            @keyframes slide-in {
                     from {
                         color: black;
                         background-color: black;
-                        margin-left: -100%;
+                        transform: translateX(-120%);
                         opacity: 1;
                     }
             
                     to {
                         background-color: black;
-                        margin-left: auto;
+                        transform: translateX(0%);
                         /* margin-left: 0; */
                         opacity: 1;
                     }
@@ -520,7 +520,7 @@ form button {
     }
 
     header {
-        margin-top: 25%;
+        margin-top: 20%;
         margin-bottom: 5%;
     }
 
@@ -551,7 +551,7 @@ form button {
     }
 
     #tagline-top1, #tagline-top2{
-        font-size: 0.9em;
+        font-size: 1.0em;
     }
 
   #tagline-top2{
@@ -569,18 +569,19 @@ form button {
     border-left: none;
     border-top: 9px double cyan;
     background: linear-gradient(rgba(23, 32, 36, 0.7), rgba(0, 255, 255, 0.55));
-    padding: 5% 10% 3% 10%;
+    padding: 2% 10% 2% 9%;
     font-size: 0.95em;
    }
 
    #tagline-bottom {
+    animation: slide-in 3s;
     grid-column: 1 / 13;
     width: 15%;
     margin-right: auto;
     margin-left: auto;
     font-size: 0.95em;
     text-align: center;
-    padding:  10% 16.5% 10% 16.5%;
+    padding:  6% 16.5% 6% 16.5%;
     /* padding-left:  20%;
     padding-right: 20%;
     padding-top: 10%; 
@@ -605,8 +606,8 @@ form button {
     background: linear-gradient(rgba(0, 255, 255, 0.55), rgba(23, 32, 36, 0.7));
     border-right: none;
     border-bottom: 9px double cyan;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 6%;
+    padding-bottom: 6%;
     width: 50%;
     /* margin-left: -35%;
     padding:  0 7% 0 7%;
@@ -618,7 +619,7 @@ form button {
    }
 
     #project-text {
-        margin-top: 95%;
+        margin-top: 100%;
         }
 
     #about-text {
