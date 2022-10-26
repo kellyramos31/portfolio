@@ -500,7 +500,7 @@ form button {
             
                     to {
                         background-color: black;
-                        margin-left: -9%;
+                        margin-left: 0;
                         /* margin-left: 0; */
                         opacity: 1;
                     }
@@ -513,7 +513,7 @@ form button {
     }
 
     header {
-        margin-top: 35%;
+        margin-top: 25%;
         margin-bottom: 5%;
     }
 
@@ -553,39 +553,51 @@ form button {
   }
 
    .tagline-mid{
-    grid-column: 3 / 6;
+    grid-column: 5 / 10;
     margin:unset;
-    margin-left: 3%;
-    padding: 8% 10.75% 8% 9%;
-    font-size: 0.7em;
+    text-align: center;
+    border-left: none;
+    border-top: 9px double cyan;
+    background: linear-gradient(rgba(23, 32, 36, 0.7), rgba(0, 255, 255, 0.55));
+    padding: 10% 10% 5% 10%;
+    /* margin-left: 3%;
+    padding: 8% 10.75% 8% 9%;*/
+    font-size: 0.95em;
    }
 
    #tagline-bottom {
-    grid-column: 6 / 9;
-    margin-left: -8.3%;
+    grid-column: 5 / 10;
+    margin: unset;
+    padding: unset;
+    font-size: 0.95em;
+    text-align: center;
+    padding: 5% 24% 5% 24%;
+    /* padding-left:  20%;
+    padding-right: 20%;
+    padding-top: 10%; 
+    padding-bottom: 15%; */
+    /* margin-left: -8.3%;
     padding: 33% 29% 0% 23%;
-    font-size: 0.8em;
+    font-size: 0.8em; */
    }
 
    #contact-button{
-    font-size: .4em;
-    grid-column: 9 / 11;
-    width: 100%;
-    transform: translate(0,0);
-    margin-top: 65%;
-    margin-left: .25%;
-    text-align: center;
-    padding-right: 1%;
-    /* transform: translate(-7%, 108%);    */
-
+    font-size: .8em;
+    grid-column: 5 / 10;
+    transform: translate(40%, 0);
 }
 
    #behind-contact-button{
-    grid-column: 9 / 11;
+    grid-column: 5 / 9;
+    background: linear-gradient(0deg, rgba(0, 255, 255, 0.55), rgba(23, 32, 36, 0.7));
+    border-right: none;
+    border-bottom: 9px double cyan;
     margin: unset;
-    margin-left: -35%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    /* margin-left: -35%;
     padding:  0 7% 0 7%;
-    width: 100%;
+    width: 100%; */
    }
     
    #right-line {
