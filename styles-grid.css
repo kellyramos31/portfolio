@@ -237,7 +237,7 @@ header {
 }
 
 .tag-span2 {
-    animation: fade-in2 8s;
+    animation: fade-in2 6s;
     color: cyan;
     border-bottom: 3px solid cyan;
 }
