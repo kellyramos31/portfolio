@@ -148,6 +148,7 @@ header {
   }
 
         @keyframes fade-out {
+            
             from {
                 color: black;
                 background-color: black;
@@ -501,7 +502,7 @@ form button {
                     from {
                         color: black;
                         background-color: black;
-                        transform: translateX(-120%);
+                        transform: translateX(-100%);
                         opacity: 1;
                     }
             
