@@ -152,13 +152,13 @@ header {
             from {
                 color: black;
                 background-color: black;
-                margin-left: -180%;
+                /* margin-left: -180%; */
                 opacity: 1;
             }
     
             to {
                 background-color: black;
-                margin-left: -62%;
+                /* margin-left: -62%; */
                 /* margin-left: 0; */
                 opacity: 1;
             }
@@ -179,7 +179,7 @@ header {
 
 .tagline-mid{
     display: block;
-    animation: fade-in 6s;
+    /* animation: fade-in 6s; */
     margin-left: 20%;
     grid-column: 5 / 6;
     padding: 5% 31.75% 5% 18%;
@@ -192,7 +192,8 @@ header {
 
 
 #tagline-bottom {
-    animation: fade-out 3s;
+    /* animation: fade-out 3s;
+    animation-delay: 3s; */
     text-align: left;
     padding-top: 38.5%;
     color: whitesmoke;
@@ -231,12 +232,12 @@ header {
 }
 
 .tag-span {
-    animation: fade-in 5s;
+    /* animation: fade-in 5s; */
     color:cyan;
 }
 
 .tag-span2 {
-    animation: fade-in2 5s;
+    animation: fade-in2 8s;
     color: cyan;
     border-bottom: 3px solid cyan;
 }
@@ -498,7 +499,7 @@ form button {
             width: 100%;
         }
 
-            @keyframes slide-in {
+            /* @keyframes slide-in {
                     from {
                         color: black;
                         background-color: black;
@@ -510,9 +511,9 @@ form button {
                         background-color: black;
                         transform: translateX(0%);
                         /* margin-left: 0; */
-                        opacity: 1;
-                    }
-                }
+                        /* opacity: 1;
+                    } */
+                /* } */
 
     .nav-bar {
       padding-bottom: unset;
@@ -575,7 +576,7 @@ form button {
    }
 
    #tagline-bottom {
-    animation: slide-in 3s;
+    /* animation: slide-in 3s; */
     grid-column: 1 / 13;
     width: 15%;
     margin-right: auto;
