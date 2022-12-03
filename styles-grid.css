@@ -15,24 +15,35 @@ body {
 
 html {
     scroll-behavior: smooth;
-
 }
 
 nav {
-    grid-column: 11 / 12;
+    position: fixed;
+    right: 2%;
+    grid-column: 1 / 13;
+    font-size: medium;
+    z-index: 10;
 }
 
 .nav-bar {
     display: flex;
     justify-content: flex-end;
+    background-color: black;
+    padding:  1px 35px 10px 40px;
+    border-radius: 7px;
 }
+
+#contact-nav {
+    margin-left: 18%;
+}
+
 
 a {
     color: cyan;
     text-decoration: none;
-    margin-top: 30px;
-    margin-left: 4%;
+    margin-top: 15px;
     font-size: larger;
+    margin-left: 4%;
 }
 
 a:hover {
@@ -42,8 +53,9 @@ a:hover {
 
 .contact-li-git-icons-nav {
     display: flex;
-    margin-left: 4%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 4%;
+
 }
 
 .li-git-icons {
@@ -58,20 +70,10 @@ a:hover {
 header {
     display: flex;
     justify-content: flex-start;
-    animation: slideInLeft 3s;
-    margin: 5% 0 15% 0;
+    animation: fadeIn 5s;
+    margin: 3% 0 0 0;
 }
 
-
-@keyframes slideInLeft {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
 
 #overlay-left {
     opacity: 1;
@@ -95,14 +97,153 @@ header {
     margin: 6.5% 2% 0 2%;
     width: 90%;
     opacity: 1;
-    padding-top: 5px;
     font-size: x-large;
-    border-top: 4px solid cyan;
+    height: auto;
+    border-top: 5px double cyan;
+    border-bottom: 5px double cyan;
+}
+
+
+
+#tagline-top1, #tagline-top2, .tagline-mid, #tagline-bottom{
+   text-align: center;
+   font-size: larger;
+   color: whitesmoke;
+   width: 30%;
+}
+
+#tagline-top1,
+#tagline-top2
+.tagline-mid,
+#tagline-bottom {
+    color: whitesmoke;
+    font-size: 1.2em;
+}
+
+#tagline-top1,
+#tagline-top2 {
+    grid-column: 1 / 13;
+    margin: .25% auto 0% auto;
+}
+
+#tagline-top1 {
+    margin-top: 1%;
+}
+
+#tagline-top2{
+    margin-bottom: 1%;
+}
+
+ @keyframes fade-in {
+      from {
+        display: none;
+        color: black;
+      }
+
+      to {
+        display: block;
+        /* background-color: rgb(90, 86, 86); */
+        opacity: 1;
+      }
+  }
+
+        @keyframes fade-out {
+            
+            from {
+                color: black;
+                background-color: black;
+                /* margin-left: -180%; */
+                opacity: 1;
+            }
+    
+            to {
+                background-color: black;
+                /* margin-left: -62%; */
+                /* margin-left: 0; */
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in2{
+            from {
+                color: black;
+            }
+            
+            to {
+                color: cyan;
+            }
+        }
+
+
+
+
+.tagline-mid{
+    display: block;
+    /* animation: fade-in 6s; */
+    margin-left: 20%;
+    grid-column: 5 / 6;
+    padding: 5% 31.75% 5% 18%;
+    width: 60%;
+    text-align: left;
+    /* background-color: rgb(73, 66, 66); */
+    background: linear-gradient(90deg, rgba(23, 32, 36, 0.7), rgba(0, 255, 255, 0.55));
+    border-left: 9px double cyan;
+}
+
+
+#tagline-bottom {
+    /* animation: fade-out 3s;
+    animation-delay: 3s; */
+    text-align: left;
+    padding-top: 38.5%;
+    color: whitesmoke;
+    grid-column: 7 / 8;
+    padding-left: 43.25%;
+    padding-right: 47%;
+    margin-left: -62%;
+    background-color: black;
+    border: 3px solid cyan;
+}
+
+#contact-button{
+    font-family: "Montserrat";
+    border: 3px double cyan;
+    border-radius: 5px;
+    background-color: black;
+    color: cyan;
+    font-size: large;
+    height: 33px;
+    grid-column: 8 / 9;
+    cursor: pointer;
+    transform: translate(29%, 180%);
+}
+
+#contact-button:hover{
+    border: 3px solid cyan;
+}
+
+#behind-contact-button {
+    grid-column: 8 / 9;
+    /* background-color: rgb(73, 66, 66); */
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.521),  rgba(23, 32, 36, 0.7) );
+    margin-left: -37%;
+    margin-right: 19%;
+    border-right: 9px double cyan;
+}
+
+.tag-span {
+    /* animation: fade-in 5s; */
+    color:cyan;
+}
+
+.tag-span2 {
+    animation: fade-in2 6s;
+    color: cyan;
+    border-bottom: 3px solid cyan;
 }
 
 #name {
-    padding-top: 3%;
-    padding-bottom: 2%;
+    padding-top: 5%;
     font-size: x-large;
     color: cyan;
     text-align: center;
@@ -111,7 +252,6 @@ header {
 #dev {
     text-align: center;
     color: rgb(227, 250, 250);
-    margin-bottom: -3%;
 }
 
 p {
@@ -124,11 +264,11 @@ p::after {
     background: cyan;
     height: 4px;
     font-size: 10px;
-    margin-top: 14px;
+    margin-top: 15px;
 }
 
 .tech-icons-group {
-    margin: 8% 0% 3% 0%;
+    margin: 5% 0% -1% 0%;
 }
 
 .about-icons {
@@ -152,32 +292,22 @@ p::after {
 #stack {
     font-size: medium;
     text-align: center;
+    padding-top:  6%;
 }
 
-.subtitle-container-grid {
+.subtitle-container-grid, #subtitle-container-grid-contact {
     grid-column: 1 / 13;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 50%;
 }
 
 
-.sub-title {
-    display: flex;
-    justify-content: center;
-}
-
-
-#projects-text {
+#project-text, #about-text, #contactme {
     font-size: x-large;
-    margin: 0 5% 0 5%;
-}
-
-#about-text {
-    font-size: x-large;
-    margin: 0 5.75% 0 5.75%;
-}
-
-#contact-text {
-    font-size: x-large;
-    margin: 0 3.5% 0 4.55%;
+    text-align: center;
+    border-top: 4px solid cyan;
+    margin-top: 35%;
 }
 
 
@@ -186,12 +316,6 @@ p::after {
     color: rgb(227, 250, 250);
 }
 
-#overlay-2 {
-    opacity: 1;
-    height: 2rem;
-    width: 100%;
-    background: linear-gradient(to right, rgba(0, 255, 255, 0.55), rgba(23, 32, 36, 0.7)), url("./assets/louvre-pyramid-bottom.jpg") no-repeat;
-}
 
 
 #projects-container {
@@ -202,7 +326,8 @@ p::after {
 
 
 #stem-project-container,
-#rtv-project-container {
+#rtv-project-container, 
+#vetfest-project-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -211,7 +336,8 @@ p::after {
 
 
 #stem-project-descrip,
-#rtv-project-descrip {
+#rtv-project-descrip,
+#vetfest-project-descrip {
     background-color: black;
     height: 225px;
     width: 30%;
@@ -219,8 +345,12 @@ p::after {
     border: 2px solid cyan;
     text-align: center;
     padding: 5px 15px 0 15px;
-    margin: 4.35% -12% 0 0;
+    margin: 3.25% -12% 0 0;
     z-index: 3;
+}
+
+#vetfest-project-descrip{
+    padding-bottom: 0.5%;
 }
 
 #img-overlay {
@@ -235,7 +365,8 @@ p::after {
 
 
 #stem-edu-screenshot-overlay,
-#rtv-screenshot-overlay {
+#rtv-screenshot-overlay,
+#vetfest-screenshot-overlay {
     height: 300px;
     width: 100%;
     border-radius: 7px;
@@ -250,24 +381,27 @@ p::after {
 }
 
 #about-me-grid {
-    grid-column: 5 / 11;
-    margin: 10% 0 10% 1%;
+    grid-column: 1 / 13;
+    margin-bottom: 10%;
 }
 
 #about-and-pic {
     display: flex;
-    justify-content: flex-start;
-    width: 92%;
-    margin: 2% 0 12% 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2% 0 5% 0;
 }
 
 #about-me {
-    width: 60%;
+    width: 38%;
 }
 
+
 #builder {
+    margin-top: 2%;
+    text-align: center;
     font-size: x-large;
-    padding-bottom: -1%;
     color: rgb(227, 250, 250);
 }
 
@@ -278,40 +412,31 @@ p::after {
     font-size: medium;
 }
 
+#me-detail {
+    margin: 3% 11.25% 0 11.25%;
+    text-align: center;
+}
 
 #pic {
-    margin: 4.75% 0 0 2%;
+    margin: 1% 1.85% 1% 2%;
     border-radius: 50%;
+    width: 10%;
 }
 
-#overlay-3 {
-    opacity: 1;
-    height: 2rem;
-    width: 100%;
-    background: linear-gradient(to right, rgba(23, 32, 36, 0.7), rgb(21, 255, 255, 0.4)), url("./assets/louvre-pyramid-bottom.jpg") no-repeat;
-}
-
-#overlay-4 {
-    opacity: 1;
-    height: 2rem;
-    width: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0, 0)) no-repeat;
-}
 
 #contact-me-grid {
-    grid-column: 5 / 11;
-    margin: 5% 0 10% 0;
+   grid-column: 5 / 9;
 }
 
 #send-msg {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    text-align: center;
 }
 
 
 #get-in-touch {
-    padding-top: 10px;
+    margin-top: 15%;
     padding-bottom: 10px;
     font-size: x-large;
     color: rgb(227, 250, 250);
@@ -359,101 +484,219 @@ form button {
     color: black;
     border: none;
     background-color: rgba(5, 239, 239, 0.9);
-    margin-top: .5%;
+    margin-top: 7%;
+    
 }
 
-@media only screen and (max-width: 912px) {
-    nav {
-        grid-column: 1 / 13;
-    }
+
+
+@media only screen and (max-width: 980px) {
+
+    #tagline-top1,
+        #tagline-top2 {
+            width: 100%;
+        }
+
+            /* @keyframes slide-in {
+                    from {
+                        color: black;
+                        background-color: black;
+                        transform: translateX(-100%);
+                        opacity: 1;
+                    }
+            
+                    to {
+                        background-color: black;
+                        transform: translateX(0%);
+                        /* margin-left: 0; */
+                        /* opacity: 1;
+                    } */
+                /* } */
 
     .nav-bar {
-        justify-content: center;
+      padding-bottom: unset;
+      right: 0;
+      font-size: small;
+    }
+
+    header {
+        margin-top: 14%;
+        margin-bottom: 5%;
     }
 
     .header-info {
-        width: 75%;
+        width: 76%;
+        height: auto;
+        font-size: small;
     }
 
     #overlay-left, #overlay-right {
-        width: 10%;
+        height: auto;
+        width: 19%;
     }
 
   
     #name {
-        padding-top: 7.5%;
         font-size: 24px;
+        padding: 2%;
     }
 
 
     #dev {
-        font-size: 22px;
+        font-size: 1.2em;
     }
 
    .icons {
-        font-size: 24px;
+        font-size: 30px;
     }
 
+    #tagline-top1, #tagline-top2{
+        font-size: 1.0em;
+    }
 
-    /* #name {
-        padding-top: 30px;
-    }*/
+  #tagline-top2{
+    margin-bottom: 5%;
+  }
 
-    p::after {           
-        margin-top: 17px;
+   .tagline-mid{
+    grid-column: 1 / 13;
+    text-align: center;
+    margin: unset;
+    padding: unset;
+    width: 35%;
+    margin-right: auto;
+    margin-left: auto;
+    border-left: none;
+    border-top: 9px double cyan;
+    background: linear-gradient(rgba(23, 32, 36, 0.7), rgba(0, 255, 255, 0.55));
+    padding: 0% 8% 0% 7%;
+    font-size: 0.95em;
+   }
+
+   #tagline-bottom {
+    /* animation: slide-in 3s; */
+    grid-column: 1 / 13;
+    width: 15%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 0.95em;
+    text-align: center;
+    padding:  4% 16.5% 5% 16.5%;
+    /* padding-left:  20%;
+    padding-right: 20%;
+    padding-top: 10%; 
+    padding-bottom: 15%; */
+    /* margin-left: -8.3%;
+    padding: 33% 29% 0% 23%;
+    font-size: 0.8em; */
+   }
+
+   #contact-button{
+    transform: translate(0,0);
+    font-size: .9em;
+    grid-column: 1 / 13;
+}
+
+   #behind-contact-button{
+    margin: unset;
+    text-align: center;
+    grid-column: 1 / 13;
+    margin-right: auto;
+    margin-left: auto;
+    background: linear-gradient(rgba(0, 255, 255, 0.55), rgba(23, 32, 36, 0.7));
+    border-right: none;
+    border-bottom: 9px double cyan;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 50%;
+    /* margin-left: -35%;
+    padding:  0 7% 0 7%;
+    width: 100%; */
+   }
+    
+   #right-line {
+    margin-bottom: 15%;
+   }
+
+    #project-text {
+        margin-top: 100%;
+        }
+
+    #about-text {
+         margin-top: 77%;
+         margin-bottom: -2%;
+    }
+
+    #contact-me {
+        margin: unset;
     }
    
+    #about-me-grid {
+        margin-top: 1%;
+        margin-bottom: 120%;
+    }
+ 
     #projects-container {
         grid-column: 2 / 12;
+        margin-bottom: -5%;
     }
 
     #stem-project-container,
-    #rtv-project-container {
+    #rtv-project-container,
+    #vetfest-project-container {
         flex-direction: column;
-        margin-bottom: -45%;
+        margin-bottom: -25%;
     }
 
     #stem-project-descrip,
-    #rtv-project-descrip {
+    #rtv-project-descrip,
+    #vetfest-project-descrip {
         width: 90%;
-        padding: 5% 5% 62% 5%;
+        padding: 5% 5% 60% 5%;
         font-size: small;
-        /* margin-right: unset; */
         z-index: unset;
     }
 
   
     #stem-edu-screenshot-overlay,
-    #rtv-screenshot-overlay {
+    #rtv-screenshot-overlay,
+    #vetfest-screenshot-overlay {
         height: auto;
-        transform: translate(-2%, -125%);
+        transform: translate(-1%, -120%);
     }
 
- #img-overlay:hover {
-     border-top: none;
- }
-
-    #about-me-grid {
-        grid-column: 1 / 13;
-        margin: 12% 0 15% 0;
+    #img-overlay:hover {
+        border-top: none;
     }
+
 
     #contact-me-grid {
-        grid-column: 3 / 13;
+        grid-column: 2 / 12;
+        /* margin-bottom: 30%; */
     }
 
-    #about-and-pic {
-        margin: 0 0 0 4%;
+    #pic {
+        margin-top: -1%;
+        width: 28%;
+    }
+
+    #builder {
+        font-size: large;
     }
 
     #about-me {
        width: 87%;
     }
-    
-    #send-msg {
-        margin: 10% 0 10% -3%;
-        justify-content: center;
+
+    #me-detail {
+        margin-left: 12%;
+        margin-right: 12%;
     }
 
+    #get-in-touch {
+        margin-top: 5%;
+    }
+
+ 
 }
 
